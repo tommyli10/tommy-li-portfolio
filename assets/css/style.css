@@ -1,0 +1,343 @@
+/* ---------------------------
+clearfix and base styles
+--------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+/* clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* base styles */
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    display: relative;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+}
+
+/* ---------------------------
+general layout
+--------------------------- */
+body {
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+    background: #D9D7CC;
+    color: #403E3B;
+}
+.main {
+    /* border: 1px black solid; */
+    width: 50%;
+    height: 100vh;
+}
+
+a {
+    color: #403E3B;
+    text-decoration: none;
+    display: block;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.left {
+    margin: 0 50px;
+}
+/* set up divisions layout for content sections (the right half of the page) */
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.content {
+    border-top: 1px #837e79 solid;
+    border-bottom: 1px #837e79 solid;
+    height: 24%;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.work {
+    margin-top: 10%;
+}
+
+.misc {
+    margin-bottom: 10%;
+}
+
+.content > div {
+    position: relative;
+    /* border: 1px #837e79 solid; */
+    /* flex: 1; */
+    width: 25%;
+    height: 82%;
+    margin-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.content div:last-child {
+    margin: 0;
+    width: 62%;
+}
+
+/* ---------------------------
+animations
+--------------------------- */
+/* hover underline animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B8D9D0;
+    transform-origin: bottom right;
+    transition: transform 0.75s ease-out;
+}
+
+.brown:after {
+    background-color: #403E3B;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* carousel animation */
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+.carousel .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 13vw;
+    height: 100%;
+  /*   border-radius: 50%; */
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    /* height: 100%; */
+    object-fit: cover;
+}
+  
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+  
+.item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-125%, -50%);
+}
+  
+.item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(25%, -50%);
+}
+  
+.content .button-container {
+    /* border: 1px black solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 60%;
+}
+  
+.button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+  
+.button-container .button:hover {
+    opacity: 1;
+}
+  
+.button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+}
+  
+.button-container .button:nth-child(1) {
+    position: absolute;
+    left: -34%;
+}
+  
+.button-container .button:nth-child(2) {
+    position: absolute;
+    right: -34%;
+}
+
+.content .button:last-child {
+    width: 19.2px;
+}
+
+/* ---------------------------
+additional styles
+--------------------------- */
+/* main section left styles */
+/* profile pic style */
+.profile {
+    margin-top: 10%;
+    position: relative;
+    border-radius: 100%;
+}
+
+.profile div {
+    border: 10px rgb(238, 232, 232) solid;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left div {
+    /* border: 1px black solid; */
+    text-align: center;
+}
+
+/* intro style */
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-top: 3.5rem;
+}
+
+.name p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    padding: 0 40px;
+    padding-top: 20px;
+    margin: 25px auto;
+    color: #837e79;
+    border-top: 1px #837e79 solid;
+    transform: scaleY(1.1);
+    width: 80%;
+}
+
+.name p:last-child {
+    padding-top: 0;
+    padding-bottom: 20px;
+    border: 0;
+    border-bottom: 1px #837e79 solid;
+}
+
+/* social section style */
+.social {
+    margin-bottom: 40px;
+}
+
+.social a,
+.contact a {
+    display: inline-block;
+}
+
+.social img {
+    display: inline-block;
+    width: 25px;
+    margin: 0 20px;
+}
+
+.contact img {
+    width: 25px;
+    vertical-align:middle;
+}
+
+.contact a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: 1px #837e79 solid;
+}
+
+.contact a:hover {
+    background: #403E3B;
+    color: #837e79;
+    border-radius: 10px;
+    transition-duration: 0.75s
+}
+
+/* main section right styles */
+h2 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;   
+}
