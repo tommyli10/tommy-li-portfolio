@@ -13,58 +13,88 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <!-- <a href="#">
+            <h3 class="logo">Tommy Li</h3>
+        </a> -->
+        <nav>
+            <a href="#work">
+                <li class="hover-underline-animation brown">Work</li>
+            </a>
+            <a href="#contact-info">
+                <li class="hover-underline-animation brown">Services</li>
+            </a>
+            <a href="https://dev.to/tommyli2014" target="_blank">
+                <li class="hover-underline-animation brown">Blog</li>
+            </a>
+            <a href="https://issuu.com/tommyli76278/docs/tommy_li_porfolio" target="_blank">
+                <li class="hover-underline-animation brown">Architecture</li>
+            </a>
+        </nav>
+    </header>
+
     <!-- Left Section -->
-    <section class="main left">
-        <!-- Logo Section -->
-        <div class="profile">
-            <div style="background-image: url('assets/images/compressed/profil2.png');" class="wrap"></div>
-        </div>
-        <!-- Name and Address Section -->
-        <div class="name">
-            <h1>Tommy Li</h1>
-            <p>Hi there! My name is Tommy, and I am a software engineer based in Los Angeles, California.</p>
+    <main>
+        <section class="main left clearfix">
+            <!-- Logo Section -->
+            <div class="profile">
+                <div style="background-image: url('https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/profil2.png?v=1647250482974');" class="wrap"></div>
+            </div>
+            <!-- Name and Address Section -->
+            <div class="name">
+                <h1>Tommy Li</h1>
+                <p>Los Angeles</p>
+            </div>
+            <!-- Social Section -->
+            <div class="social">
+                <a href="https://github.com/tommyli2014" target="_blank"><img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/github.png?v=1647250779712" alt="github"></a>
+                <a href="https://www.linkedin.com/in/tommy-l-85617a102" target="_blank"><img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/linkedin.png?v=1647250780828"
+                        alt="linkedin"></a>
+                <a href="https://twitter.com/TommyD_Fox" target="_blank"><img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/twitter.png?v=1647250778634" alt="twitter"></a>
+                <a href="mailto: tommyvulpini@gmail.com"><img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/mail.png?v=1647250777456" alt="mail"></a>
+            </div>
+
+        </section>
+
+        <section class="main right">
             <p>I can help you or your business increase your online presence and attract more customers by building you websites that fits your needs.</p>
-        </div>
-        <!-- Social Section -->
-        <div class="social">
-            <a href="https://github.com/tommyli2014" target="_blank"><img src="assets/images/github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/tommy-l-85617a102" target="_blank"><img src="assets/images/linkedin.png" alt="linkedin"></a>
-            <a href="https://twitter.com/TommyD_Fox" target="_blank"><img src="assets/images/twitter.png" alt="twitter"></a>
-            <a href="mailto: tommyli76278@gmail.com"><img src="assets/images/mail.png" alt="mail"></a>
-        </div>
-        <!-- Contact Section -->
-        <div class="contact">
-            <a href="#" class="hover-underline-animation">Contact Me</a>
-        </div>
-    </section>
+            <!-- Contact Section -->
+            <div class="contact">
+                <a href="#contact-info" class="hover-underline-animation">Contact Me</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Right Section -->
-    <section class="main right">
+    <section class="bottom">
         <!-- Each section is a category -->
-        <section class="content work">
+        <section class="content work" id="work">
             <div>
-                <a href="#">
-                    <h2 class="hover-underline-animation brown">Work</h2>
-                </a>
+                <h2>Work</h2>
                 <ul>
                     <li>Website</li>
                     <li>Applications</li>
+                    <li>JS functions</li>
                 </ul>
             </div>
             <!-- carousel section -->
             <div>
                 <div class="carousel">
                     <div class="item active">
-                        <a href="https://hair-salon-website---modified.glitch.me" target="_blank"><img src="assets/images/arch.png"></a>
+                        <a href="https://hair-salon-website---modified.glitch.me" target="_blank"><img
+                                src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/arch-min.png?v=1647250979758"></a>
                     </div>
-                    <div class=" item next">
-                        <a href="https://restaurant-site-responsive---100-devs.glitch.me" target="_blank"><img src="assets/images/resturant.png"></a>
+                    <div class="item next">
+                        <a href="https://restaurant-site-responsive---100-devs.glitch.me" target="_blank"><img
+                                src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/resturant-min.png?v=1647250980229"></a>
                     </div>
                     <div class="item">
-                        <a href="https://simple-java-script---beverage-selection.glitch.me" target="_blank"><img src="assets/images/beverage cropped.png"></a>
+                        <a href="https://simple-java-script---beverage-selection.glitch.me" target="_blank"><img
+                                src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/beverage%20cropped-min.png?v=1647250979285"></a>
                     </div>
                     <div class="item prev">
-                        <a href="https://techcrunch-page-100devs.glitch.me" target="_blank"><img src="assets/images/tech.png"></a>
+                        <a href="https://techcrunch-page-100devs.glitch.me" target="_blank"><img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/tech-min.png?v=1647250979322"></a>
                     </div>
                     <div class="button-container clearfix">
                         <div class="button">&#60;</div>
@@ -74,56 +104,76 @@
             </div>
         </section>
 
-        <section class="content services">
+        <section class="content services" id="contact-info">
             <div>
-                <a href="#">
-                    <h2 class="hover-underline-animation brown">Services</h2>
-                </a>
+                <h2>Services</h2>
                 <ul>
                     <li>Web development</li>
                     <li>Website maintance</li>
+                    <li>Custom Website Design</li>
                 </ul>
             </div>
             <div>
-                <ul>
-                    <a href="#">
-                        <li>My Skills</li>
-                    </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                </ul>
+                <div class="one-third-left">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+                <div class="two-third-right container">
+                    <h2>Contact me</h2>
+                    <form action="/action_page.php">
+                        <div class="half">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                        </div>
+                        <div class="half">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                        <div class="clear">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="hover-underline-animation">
+                    </form>
+                </div>
             </div>
         </section>
 
         <section class="content misc">
             <div>
-                <a href="#">
-                    <h2 class="hover-underline-animation brown">Misc</h2>
-                </a>
-                <ul>
-                    <li>Blog</li>
-                    <li>Architecture & Art</li>
-                    <li>About</li>
-                    </a>
-                </ul>
+                <h2>Misc</h2>
+                <p>Other than web development, I am also interested in architectural design and writing blog posts. </p>
             </div>
-            <div>
-                <div class="blog">
-                    <a href="#">
-                        <img src="#" alt="blog">
+            <div class="misc-pic">
+                <div class="one-third-left">
+                    <a href="https://dev.to/tommyli2014" target="_blank">
+                        <img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/blog.png?v=1647250990883" alt="blog">
                     </a>
                 </div>
-                <div class="architecture">
-                    <a href="https://yli45774c.myportfolio.com/" target="_blank">
+                <div class="one-third-middle">
+                    <a href="https://issuu.com/tommyli76278/docs/tommy_li_porfolio" target="_blank">
                         <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/3f74864c-b2c4-4af1-9984-6d9b2f12c8c0/8970e81f-0a81-4fc7-9133-e2226cd94a0f_rw_1200.png?h=ed111272d4a4e8bcbf0e7b8e78bec187"
                             alt="architecture" style="width: 100%; height: 100%; object-fit: cover;">
+                    </a>
+                </div>
+                <div class="one-third-right">
+                    <a href="https://twitter.com/TommyD_Fox" target="_blank">
+                        <img src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/profil2.png?v=1647250482974" alt="architecture" style="width: 100%; height: 100%; object-fit: cover;">
                     </a>
                 </div>
             </div>
         </section>
     </section>
 
+    <footer>
+        <p>Design and code base created by Tommy Li</p>
+    </footer>
     <!-- Scripts -->
     <script src="assets/javascript/main.js"></script>
 </body>
