@@ -615,6 +615,7 @@ footer p {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: top;
     }
     .button-container .button:nth-child(1) {
         left: -45%;
@@ -680,21 +681,38 @@ footer p {
     html {
         font-size: 48%;
     }
+    nav li {
+        font-size: 16px;
+    }
     nav a:nth-child(3) {
         display: none;
     }
     nav a:nth-child(4) {
         display: none;
     }
+    main {
+        margin-top: 30px;
+        height: 900px;
+    }
+    .profile div {
+        width: 250px;
+        height: 250px;
+    }
+    .name p {
+        margin-bottom: 20px;
+    }
+    .social {
+        margin-bottom: 30px;
+    }
     .services {
-        height: 980px;
+        height: 950px;
     }
     .services > div:last-child {
         width: 100%;
     }
     .services div {
         width: 100%;
-        height: 200px;
+        height: 180px;
     }
     .container {
         transform: translate(0, 0);
