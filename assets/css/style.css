@@ -477,7 +477,7 @@ input[type=submit]:hover {
     width: 48%;
 }
 
-.half:nth-child(even) {
+.lastN {
     float: right;
 }
 
