@@ -430,6 +430,10 @@ h2 {
     color: #403E3B;
 }
 
+.gallery {
+    display: none;
+}
+
 /* service section styles */
 .container h2 {
     display: none;
@@ -573,9 +577,13 @@ footer p {
     .content {
         height: 300px;
     }
+    .work {
+        height: 1200px;
+    }
     .work div {
         float: left;
         width: 100%;
+        height: 100%;
         text-align: center;
     }
     .work > div:first-child {
@@ -586,9 +594,27 @@ footer p {
     }
     .carousel {
         left: 50%;
+        display: none;
     }
     .carousel .item {
         max-width: 40%;
+    }
+    .gallery {
+        display: block;
+        width: 100%;
+    }
+    .gallery div:first-child {
+        margin-top: 18px;
+    }
+    .gallery div {
+        width: 100%;
+        height: 22%;
+        margin-bottom: 35px;
+    }
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .button-container .button:nth-child(1) {
         left: -45%;
@@ -649,3 +675,32 @@ footer p {
         object-position: 0 10%;
     }
 } 
+
+@media all and (max-width:500px) {
+    html {
+        font-size: 48%;
+    }
+    nav a:nth-child(3) {
+        display: none;
+    }
+    nav a:nth-child(4) {
+        display: none;
+    }
+    .services {
+        height: 980px;
+    }
+    .services > div:last-child {
+        width: 100%;
+    }
+    .services div {
+        width: 100%;
+        height: 200px;
+    }
+    .container {
+        transform: translate(0, 0);
+        margin-top: 50px;
+    }
+    .container div {
+        height: auto;
+    }
+}
