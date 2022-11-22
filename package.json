@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-minimal",
-  "description": "A clean, one-page portfolio using MDX",
+  "name": "Tommy Li Portfolio",
+  "description": "",
   "version": "1.0.0",
-  "author": "Konstantin Münster <mail@konstantin.digital>",
+  "author": "Tommy Li <tommyli76278@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
